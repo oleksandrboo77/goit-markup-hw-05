@@ -457,33 +457,21 @@
 
       </div>
 
-
-      <!-- Форма Subscribe -->
       <div class="subscribe-block">
-        <div>
-          <form class="form-e-mail-column">
-            <label for="form-e-mail" class="form-e-mail-column-inscription">Subscribe</label>
-            <input type="email" id="form-e-mail" placeholder="E-mail" class="form-e-mail-column-input">
-          </form>
-        </div>
 
-        <!-- /Форма Subscribe -->
-
-        <!-- Кнопка Subscribe  -->
-
-        <div class="footer-button-container">
-          <button type="button" class="footer-button">Subscribe<svg width="24" height="24" class="footer-button-icon">
+        <p class="form-e-mail-column-inscription">Subscribe</p>
+        <form class="form-e-mail-column">
+          <label class="form-e-mail-label">
+            <input type="email" id="form-e-mail" placeholder="E-mail" class="form-e-mail-column-input"
+              name="e-mail"></label>
+          <button type="submit" class="footer-button">Subscribe<svg width="24" height="24" class="footer-button-icon">
               <use href="./images/icons.svg#icon-telegram"></use>
             </svg>
           </button>
-        </div>
-
-        <!-- /Кнопка Subscribe -->
+        </form>
       </div>
     </div>
   </footer>
-
-  <!-- Modal Window-->
 
   <div class="backdrop">
     <div class="modal">
@@ -494,63 +482,54 @@
         </svg>
       </button>
       <p class="modal-inscription">Leave your contacts and we will call you back</p>
-
-      <!-- Forms of Modal Window-->
-
-      <div class="modal-form-section">
-        <form class="modal-form" name="contacts_form">
-
-          <label class="form-label" for="modal-first-form">Name</label>
-          <div class="modal-form-item-container modal-first-form-item-container">
-            <input class="modal-form-item" id="modal-first-form">
-            <svg width="18" height="18" class="modal-form-first-item-icon">
+      <form class="modal-form">
+        <div class="modal-form-section">
+          <label class="form-label" for="user-name">Name</label>
+          <div class="modal-form-item-container">
+            <input class="modal-form-item" id="user-name" name="user-name" type="text">
+            <svg width="18" height="24" class="modal-form-item-icon">
               <use href="./images/icons.svg#icon-profile"></use>
             </svg>
           </div>
-
-
-          <label class="form-label" for="modal-second-form">Phone</label>
-          <div class="modal-form-item-container modal-second-form-item-container">
-            <input class="modal-form-item" id="modal-second-form">
-            <svg width="18" height="24" class="modal-form-second-item-icon">
+        </div>
+        <div class="modal-form-section">
+          <label class="form-label" for="user-phone">Phone</label>
+          <div class="modal-form-item-container">
+            <input class="modal-form-item" id="user-phone" name="user-phone" type="tel">
+            <svg width="18" height="24" class="modal-form-item-icon">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </div>
+        </div>
 
-          <label class="form-label" for="modal-third-form">Email</label>
-          <div class="modal-form-item-container modal-third-form-item-container">
-            <input class="modal-form-item" id="modal-third-form">
-            <svg width="18" height="24" class="modal-form-third-item-icon">
+        <div class="modal-form-section">
+          <label class="form-label" for="user-email">Email</label>
+          <div class="modal-form-item-container">
+            <input class="modal-form-item" id="user-email" name="user-email" type="email">
+            <svg width="18" height="24" class="modal-form-item-icon">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </div>
+        </div>
 
-          <label class="form-label" for="modal-fourth-form">Comment</label>
-          <div class="modal-form-item-container modal-textarea-form-item-container">
-            <textarea class="modal-form-item textarea-item" id="modal-fourth-form" placeholder="Text input"></textarea>
-          </div>
-        </form>
+        <div class="modal-comment-form-section">
+          <label class="form-label" for="user-comment">Comment</label>
+          <textarea class="modal-form-item textarea-item" id="user-comment" placeholder="Text input"></textarea>
+        </div>
 
         <div class="modal-form-checkbox-container">
-          <input type="checkbox" class="checkbox visually-hidden" id="user-checkbox">
-          <label class="label-checkbox" for="user-checkbox"><span class="custom-checkbox"><svg width="10" height="8">
+          <input type="checkbox" class="checkbox visually-hidden" id="user-privacy" value="true" name="user-privacy">
+          <label class="label-checkbox" for="user-privacy"><span class="custom-checkbox"><svg width="10" height="8"
+                class="custom-checkbox-icon">
                 <use href="./images/icons.svg#icon-accept"></use>
               </svg></span>I accept the terms and conditions of the <a href="./index.html" class="privacy-link">Privacy
               Policy</a>
           </label>
-
         </div>
-
-        <div class="modal-form-submit-button-container">
-          <button type="submit" class="modal-form-submit-button">
-            Send
-          </button>
-        </div>
-      </div>
-
-
-      <!-- Forms of Modal Window-->
-
+        <button type="submit" class="modal-form-submit-button">
+          Send
+        </button>
+      </form>
     </div>
   </div>
 
